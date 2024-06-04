@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Mike Cummings - Research</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+<div class="header">
+    <a href="index.html">Mike Cummings</a>
+    <a class="active" href="research.html">Research</a>
+    <div class="dropdown">
+        <a href="teaching.html" class="dropdown-button">Teaching</a>
+        <div class="dropdown-content">
+            <a href="courses/2024/2LA3.html">Math 2LA3</a>
+            <a href="courses/2024/2R03.html">Math 2R03</a>
+            <a href="teaching.html">Archive</a>
+        </div>
+
+    </div>
+    <a href="files/MikeCummingsCV.pdf">CV</a>
+</div>
+
+<section class="content">
+    <div>
+        <h1>Research</h1>
+    </div>
+
+    <p>
+        I am a master's student working in the group*
+        <a href="https://sites.google.com/view/mcmastercag" target="_blank">
+            Combinatorial Algebraic Geometry @McMaster</a>
+        under the supervision of
+        <a href="https://ms.mcmaster.ca/~rajchgoj/" target="_blank">Jenna Rajchgot</a>.
+    </p>
+    <p>
+        My research is in commutative algebra and algebraic geometry viewed mostly through computational and combinatorial lenses.
+        Recently, I have been looking at Hessenberg varieties, matrix Schubert varieties, and toric ideals of graphs using tools
+        such as Frobenius splitting and geometric vertex decomposition.
+        I enjoy experimenting in <i>Macaulay2</i>.
+    </p>
+    <p>
+        In 2023&mdash;2024 I am partially supported by an Ontario Graduate Scholarship, including a Bernhard Banashewski OGS,
+        and a Milos Novotny Fellowship.
+    </p>
+
+    <div class="content-block">
+        <h2>Papers</h2>
+        <ol reversed>
+            <li> <!-- The GeometricDecomposability package for Macaulay2 -->
+                <details>
+                    <summary><a href="https://doi.org/10.2140/jsag.2024.14.41" target="_blank">The GeometricDecomposability package for Macaulay2</a><br>
+                        with <a href="https://ms.mcmaster.ca/~vantuyl/" target="_blank">Adam Van Tuyl</a><br>
+                        Journal of Software for Algebra and Geometry <b>14</b> (2024), no. 1, 41&ndash;50
+                    </summary>
+                    <p>
+                        <b>Abstract.</b>
+                        Using the geometric vertex decomposition property first defined by Knutson, Miller, and Yong,
+                        a recursive definition for geometrically vertex decomposable ideals was given by Klein and Rajchgot.
+                        We introduce the <i>Macaulay2</i> package <code>GeometricDecomposability</code>
+                        which provides a suite of tools to experiment and test the geometric vertex decomposability
+                        property of an ideal.
+                    </p>
+                </details>
+            </li>
+
+            <li> <!-- Gröbner geometry for regular nilpotent Hessenberg Schubert cells -->
+                <details>
+                    <summary><a href="https://doi.org/10.1016/j.jpaa.2024.107648" target="_blank">Gröbner geometry for regular nilpotent Hessenberg Schubert cells</a><br>
+                        with
+                        <a href="https://ms.mcmaster.ca/~dasils19/" target="_blank">Sergio Da Silva</a>,
+                        <a href="https://ms.mcmaster.ca/~haradam/" target="_blank">Megumi Harada</a>, and
+                        <a href="https://ms.mcmaster.ca/~rajchgoj/" target="_blank">Jenna Rajchgot</a><br>
+                        Journal of Pure and Applied Algebra <b>228</b> (2024), no. 7, 107648
+                    </summary>
+                    <p>
+                        <b>Abstract.</b>
+                        A regular nilpotent Hessenberg Schubert cell is the intersection of a regular nilpotent
+                        Hessenberg variety with a Schubert cell.
+                        In this paper, we describe a set of minimal generators of the defining ideal of a regular nilpotent
+                        Hessenberg Schubert cell in the type <i>A</i> setting.
+                        We show that these minimal generators are a Gröbner basis for an appropriate lexicographic
+                        monomial order.
+                        As a consequence, we obtain a new computational-algebraic proof, in type <i>A</i>, of
+                        Tymoczko’s result that regular nilpotent Hessenberg varieties are paved by affine spaces.
+                        In addition, we prove that these defining ideals are complete intersections,
+                        are geometrically vertex decomposable, and compute their Hilbert series.
+                        We also produce a Frobenius splitting of each Schubert cell that compatibly splits all of the
+                        regular nilpotent Hessenberg Schubert cells contained in it.
+                        This work builds on, and extends, work of the second and third author on
+                        defining ideals of intersections of regular nilpotent Hessenberg varieties with the (open)
+                        Schubert cell associated to the Bruhat-longest permutation.
+                    </p>
+                </details>
+            </li>
+
+            <li> <!-- Geometric vertex decomposition and liaison for toric ideals of graphs -->
+                <details>
+                    <summary><a href="https://doi.org/10.5802/alco.295" target="_blank">Geometric vertex decomposition and liaison for toric ideals of graphs</a><br>
+                        with <a href="https://ms.mcmaster.ca/~dasils19/" target="_blank">Sergio Da Silva</a>,
+                        <a href="https://ms.mcmaster.ca/~rajchgoj/" target="_blank">Jenna Rajchgot</a>, and
+                        <a href="https://ms.mcmaster.ca/~vantuyl/" target="_blank">Adam Van Tuyl</a><br>
+                        Algebraic Combinatorics <b>6</b> (2023), no. 4, 965&ndash;997
+                        <br>
+                    </summary>
+                    <p>
+                        <b>Abstract.</b>
+                        Geometric vertex decomposability for polynomial ideals is an ideal-theoretic generalization of
+                        vertex decomposability for simplicial complexes.
+                        Indeed, a homogeneous geometrically vertex decomposable ideal is radical and Cohen-Macaulay,
+                        and is in the Gorenstein liaison class of a complete intersection (glicci).
+                    </p>
+                    <p>
+                        In this paper, we initiate an investigation into when the toric ideal <i>I<sub><small>G</small></sub></i> of a
+                        finite simple graph G is geometrically vertex decomposable.
+                        We first show how geometric vertex decomposability behaves under tensor products,
+                        which allows us to restrict to connected graphs.
+                        We then describe a graph operation that preserves geometric vertex decomposability,
+                        thus allowing us to build many graphs whose corresponding toric ideals are geometrically vertex decomposable.
+                        Using work of Constantinescu and Gorla, we prove that toric ideals of bipartite graphs are
+                        geometrically vertex decomposable.
+                        We also propose a conjecture that all toric ideals of graphs with a square-free degeneration
+                        with respect to a lexicographic order are geometrically vertex decomposable.
+                        As evidence, we prove the conjecture in the case that the universal Gröbner basis of
+                        <i>I<sub><small>G</small></sub></i> is a set of quadratic binomials.
+                        We also prove that some other families of graphs have the property that <i>I<sub><small>G</small></sub></i> is glicci.
+                    </p>
+                </details>
+            </li>
+        </ol>
+    </div>
+
+    <div class="content-block">
+        <h2>Software</h2>
+        <ol reversed>
+            <li> <!-- GeometricDecomposability -->
+                <a href="https://www.macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/GeometricDecomposability/html/index.html" target="_blank">GeometricDecomposability</a>,
+                a <em>Macaulay2</em> package to check whether ideals are geometrically vertex decomposable, and related methods.
+                Included in <a href="https://www.macaulay2.com/doc/Macaulay2/share/doc/Macaulay2/GeometricDecomposability/html/" target="_blank">
+                    version 1.21 (and higher) of <em>Macaulay2</em></a>.<br>
+                With <a href="https://ms.mcmaster.ca/~vantuyl/" target="_blank">Adam Van Tuyl</a>.<br>
+                For changes by version, see the <a href="GeometricDecomposability/changelog.html">changelog</a>.
+            </li>
+        </ol>
+    </div>
+
+    <div class="content-block">
+        <h2>Theses</h2>
+        <ol reversed>
+            <li>
+                <!-- Gröbner Geometry for Hessenberg Varieties -->
+                <details>
+                <summary>
+                <a href="http://hdl.handle.net/11375/29753" target="_blank">Gröbner Geometry for Hessenberg Varieties</a><br>
+                Master's Thesis, McMaster University, 2024<br>
+                Supervisor: <a href="https://ms.mcmaster.ca/~rajchgoj/" target="_blank">Jenna Rajchgot</a>
+                </summary>
+                    <p>
+                        <b>Abstract.</b>
+                        We study Hessenberg varieties in type A via their local defining equations, called patch ideals.
+                        We focus on two main classes of Hessenberg varieties: those associated to a regular nilpotent operator and those associated to a semisimple operator.
+                    </p>
+                    <p>
+                        In the setting of regular semisimple Hessenberg varieties, which are known to be smooth and irreducible,
+                        we determine that their patch ideals are triangular complete intersections, as defined by Da Silva and Harada.
+                        For semisimple Hessenberg varieties, we give a partial positive answer to a conjecture of Insko and Precup that
+                        a given family of set-theoretic local defining ideals are radical.
+                    </p>
+                    <p>
+                        A regular nilpotent Hessenberg Schubert cell is the intersection of a Schubert cell with a regular nilpotent Hessenberg variety.
+                        Following the work of the author with Da Silva, Harada, and Rajchgot, we construct an embedding of the regular nilpotent Hessenberg Schubert
+                        cells into the coordinate chart of the regular nilpotent Hessenberg variety corresponding to the longest-word permutation in Bruhat order.
+                        This allows us to use work of Da Silva and Harada to conclude that regular nilpotent Hessenberg Schubert cells are also
+                        local triangular complete intersections.
+                    </p>
+                </details>
+            </li>
+            <li> <!-- Geometric Vertex Decomposition and Hessenberg Patch Ideals -->
+                <a href="https://macdrive.mcmaster.ca/f/ce2b8010771c44dba9dd/" target="_blank">Geometric Vertex Decomposition and Hessenberg Patch Ideals</a><br>
+                Undergraduate Thesis, McMaster University, 2022<br>
+                Supervisors:
+                <a href="https://ms.mcmaster.ca/~dasils19/" target="_blank">Sergio Da Silva</a>,
+                <a href="https://ms.mcmaster.ca/~haradam/" target="_blank">Megumi Harada</a>, and
+                <a href="https://ms.mcmaster.ca/~rajchgoj/" target="_blank">Jenna Rajchgot</a>
+            </li>
+        </ol>
+    </div>
+
+    <div class="content-block">
+        <p>
+            Many current and former members of McMaster's algebra group attended <a href="https://sites.google.com/view/caac2023/home" target="_blank">
+            CAAC 2023</a> at the University of Waterloo.
+        </p>
+        <img class="center" style="max-width:600px;" src="files/McMasterAtCAAC2023.jpg" alt="Recent and former members of McMaster's Algebra group">
+        <p style="font-size:0.8em;">
+            Top row:
+            Illya Kierkosz, <a href="https://ms.mcmaster.ca/~rajchgoj/" target="_blank">
+            Jenna Rajchgot</a>,
+            Kieran Bhaskara,
+            myself, <a href="https://ms.mcmaster.ca/~vantuyl/" target="_blank">
+            Adam Van Tuyl</a>,
+            Adrian Cook.
+            <br>
+            Bottom row: <a href="https://sites.google.com/view/thainguyenmath/home" target="_blank">
+            Thái Thành Nguyễn</a>, <a href="https://math.galetto.org" target="_blank">
+            Federico Galetto</a>, <a href="https://ms.mcmaster.ca/~haradam/" target="_blank">
+            Megumi Harada</a>,
+            Graham Keiper,
+            Sergio Da Silva,
+            Büşra Atar,
+            Runyue Wang.
+        </p>
+    </div>
+
+    <br>
+    <hr>
+
+    <!--- footnote --->
+    <div class="content-block">
+        <p style="font-size:0.8em;"><sup>*</sup>The underlying set is the collection of members. The group operation remains unclear.</p>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; Mike Cummings. Last updated: May 19, 2024.</p>
+</footer>
+
+</body>
+
+</html>

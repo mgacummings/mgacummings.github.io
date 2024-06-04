@@ -1,0 +1,264 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"), 
+        url("../fonts/Roboto-Regular.woff") format("woff"), 
+        url("../fonts/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/AvenirLTStd-Book.woff2") format("woff2"),
+        url("../fonts/AvenirLTStd-Book.woff") format("woff");
+    // src: local("../fonts/Avenir.ttc");
+}
+
+
+html,
+body {
+    background-color: rgb(236, 242, 248);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+p,
+ul,
+ol,
+table,
+tr,
+th,
+blockquote {
+    font-family: "Avenir", Helvetica, sans-serif;
+}
+
+blockquote {
+    font-style: italic;
+}
+
+a {
+    color: rgb(25, 128, 1);
+    text-decoration: underline;
+}
+
+code {
+    font-size: 14px;
+}
+
+/*a {*/
+/*   color: rgb(50, 150, 30);*/
+/*    text-decoration: underline;*/
+/*}*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", "Times New Roman", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.125rem;
+}
+
+img {
+    max-width: 90%;
+}
+
+summary {
+    padding-top: 5px;
+}
+
+.notes-table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.notes-table thead th:nth-child(1) {
+    width: 50%;
+}
+
+.notes-table th, td {
+    padding: 20px;
+}
+
+.notes-table th:first-child {
+    width: 70%;
+}
+
+.notes-table tr td:nth-child(2) {
+    text-align: center;
+}
+
+.tutorial-table-file {
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+.content {
+    padding-top: 102px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-bottom: 20px;
+}
+
+.content h1 {
+    margin-top: 1em;
+    margin-bottom: 0.33em;
+}
+
+.content-block {
+    padding: 5px 0;  /* top&bottom, left&right */
+}
+
+.content-block h2 {
+    margin-bottom: 10px;
+}
+
+.content-block ul,
+.content-block ol {
+    margin-top: 0.75em;
+    margin-bottom: 1.3em;
+}
+
+li + li {
+    margin-top: 12px;
+}
+
+.short-list li + li {
+    margin-top: 3px;
+}
+
+.content-block:first-child {
+    padding: 0 0 5px;  /* top, left&right, bottom */
+}
+
+.content-block:last-child {
+    padding: 5px 0 40px;  /* top, left&right, bottom */
+}
+
+.twoCols {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+    column-gap: 25px;
+}
+
+@media screen and (max-width: 900px) {
+    .twoCols { grid-template-columns: repeat(2, 1fr); }
+}
+
+.baritone-picture {
+    width: min(70%, 350px);
+    height: auto;
+}
+
+/* header and footer */
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(85, 114, 148);
+    padding: 16px 0;
+    float: left;
+    text-align: center;
+}
+
+.header a {
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+
+.header a.active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.4em;
+}
+
+.header a:hover {
+    color: rgb(189, 189, 189);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.4em;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button:hover {
+    color: rgb(189, 189, 189);
+    text-decoration: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(85, 114, 148);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.footer {
+    margin-top: auto;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(70, 83, 99);
+    color: white;
+    text-align: center;
+    font-size: small;
+}
