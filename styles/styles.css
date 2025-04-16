@@ -12,7 +12,7 @@
     font-family: "Avenir";
     src: url("../fonts/AvenirLTStd-Book.woff2") format("woff2"),
         url("../fonts/AvenirLTStd-Book.woff") format("woff");
-    // src: local("../fonts/Avenir.ttc");
+    src: local("../fonts/Avenir.ttc");
 }
 
 
@@ -113,10 +113,6 @@ summary {
 
 .notes-table tr td:nth-child(2) {
     text-align: center;
-}
-
-.tutorial-table-file {
-
 }
 
 .center {
