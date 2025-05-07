@@ -93,6 +93,30 @@ summary {
     padding-top: 5px;
 }
 
+details summary {
+    list-style: none;               /* Remove default marker */
+    display: inline;
+    cursor: pointer;
+}
+  
+details summary::-webkit-details-marker {
+    display: none;                  /* Hide marker in WebKit browsers */
+}
+
+details summary::before {
+    font-size: 0.7em;               /* Adjust the size */
+    vertical-align: middle;         /* Optional: aligns better with text */
+    color: rgb(25, 128, 1);
+}
+  
+details[open] summary::before {
+    content: "▼  ";                  /* Icon when open */
+}
+  
+details:not([open]) summary::before {
+    content: "▶  ";                  /* Icon when closed */
+}
+
 .notes-table {
     table-layout: fixed;
     width: 100%;
