@@ -18,7 +18,7 @@
 
 html,
 body {
-    background-color: rgb(236, 242, 248);
+    background-color: rgb(248, 250, 255);
 }
 
 html {
@@ -47,18 +47,13 @@ blockquote {
 }
 
 a {
-    color: rgb(25, 128, 1);
+    color: rgb(8, 140, 8);
     text-decoration: underline;
 }
 
 code {
     font-size: 14px;
 }
-
-/*a {*/
-/*   color: rgb(50, 150, 30);*/
-/*    text-decoration: underline;*/
-/*}*/
 
 h1,
 h2,
@@ -106,7 +101,7 @@ details summary::-webkit-details-marker {
 details summary::before {
     font-size: 0.7em;               /* Adjust the size */
     vertical-align: middle;         /* Optional: aligns better with text */
-    color: rgb(25, 128, 1);
+    color: rgb(8, 140, 8);
 }
   
 details[open] summary::before {
@@ -279,7 +274,7 @@ li + li {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgb(85, 114, 148);
+    background-color: rgb(60, 100, 160);
     padding: 16px 0;
     float: left;
     text-align: center;
@@ -322,7 +317,7 @@ li + li {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgb(85, 114, 148);
+    background-color: rgb(60, 100, 160);
     padding-top: 6px;
     padding-bottom: 6px;
     min-width: 160px;
@@ -346,7 +341,7 @@ li + li {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(70, 83, 99);
+    background-color: rgb(60, 100, 160);
     color: white;
     text-align: center;
     font-size: small;
