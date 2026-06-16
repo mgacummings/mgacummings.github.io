@@ -61,9 +61,32 @@
     </div>
 
     <div class="content-block">
+        <h3>Version 1.4.4</h3>
+        <p>To be included in version 1.26.11 of <a href="https://www.macaulay2.com" target="_blank"><i>Macaulay2</i></a>.</p>
+        <ul>
+            <li>
+                Changes to <code>findLexCompatiblyGVDOrders</code>:
+                <ul class="short-list">
+                    <li>
+                        Fixed a bug that would erroneously return the empty list
+                    </li>
+                    <li>
+                        Introduced new optional parameter <code>OnlyPrefix</code>, default value <code>true</code>, which <b>changes the default behaviour</b>.
+                        This default behaviour returns prefixes of lex orderings that are sufficient to lex-compatibly geometrically vertex decompose the given ideal.
+                        Setting <code>OnlyPrefix=>false</code> recovers the previous behaviour, which returns all linear extensions of these prefixes.
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b>Renamed</b> optional parameter <code>SquarefreeOnly</code> to <code>OnlySquarefree</code>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content-block">
         <h3>Version 1.4.3</h3>
         <p>
-            Forthcoming, to be included in version 1.25.11 of <a href="https://www.macaulay2.com" target="_blank"><i>Macaulay2</i></a>.
+            Included in version 1.25.11 of <a href="https://www.macaulay2.com" target="_blank"><i>Macaulay2</i></a>.
         </p>
         <ul class="short-list">
             <li>Added aliases <code>link</code> and <code>deletion</code> for <code>oneStepGVDCyI</code> 
@@ -185,7 +208,7 @@
 
 
 <footer class="footer">
-    <p>&copy; Mike Cummings. Last updated: November 7, 2025.</p>
+    <p>&copy; Mike Cummings. Last updated: June 16, 2026.</p>
 </footer>
 
 </body>
