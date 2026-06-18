@@ -71,7 +71,20 @@
                         Fixed a bug that would erroneously return the empty list
                     </li>
                     <li>
-                        Introduced new optional parameter <code>OnlyPrefix</code>, default value <code>true</code>, which <b>changes the default behaviour</b>.
+                        Introduced an optional parameter <code>MaxNumTerms</code>, default value <code>infinity</code>.
+                        When a finite (positive integer) value is specified, the code produces only produces <i>candidate</i> orderings of the variables 
+                        of length at most <code>MaxNumTerms</code>. 
+                        <br>
+                        Note that this <b>no longer guarantees</b> that the orders in the output are sufficient to compatibly geometrically vertex decompose 
+                        the given ideal. 
+                        Instead, all that is guaranteed is that the given variables, in this order, produce geometric vertex decompositions, but makes 
+                        no guarantee of geometric vertex decomposability.
+                        <br>
+                        For example, running <code>findLexCompatiblyGVDOrders(I, MaxNumTerms=>1)</code> when <code>I = ideal(x*y^2)</code> returns 
+                        <code>{{x}}</code>, but of course <code>I</code> is not (compatibly) geometrically vertex decomposable.
+                    </li>
+                    <li>
+                        Introduced an optional parameter <code>OnlyPrefix</code>, default value <code>true</code>, which <b>changes the default behaviour</b>.
                         This default behaviour returns prefixes of lex orderings that are sufficient to lex-compatibly geometrically vertex decompose the given ideal.
                         Setting <code>OnlyPrefix=>false</code> recovers the previous behaviour, which returns all linear extensions of these prefixes.
                     </li>
@@ -105,7 +118,7 @@
                         Previously, we checked the definition directly.
                         In this version, we now compute the initial ideal with respect to the given lex ordering < of the variables 
                         and check whether it is <-compatibly geometrically vertex decomposable.
-                        These are equivalent by Proposition 2.14 in Klein&mdash;Rajchgot's <i>Geometric vertex decomposition and liaison</i>.
+                        These are equivalent by Proposition 2.14 in Klein&ndash;Rajchgot's <i>Geometric vertex decomposition and liaison</i>.
                     </p>
                     <p>
                         Heuristically we expect this new version to be faster because computing associated primes (and hence, checking unmixedness) 
@@ -188,9 +201,11 @@
     </div>
 
     <div class="content-block">
-        <h2>Version 1.2</h2>
+        <h2>Version 1.2 &#x2B50;</h2>
         <p>
             Included in version 1.22 of <a href="https://www.macaulay2.com" target="_blank"><em>Macaulay2</em></a>.
+            <a href="https://doi.org/10.2140/jsag.2024.14.41" target="_blank">This version was published</a> 
+            in the <a href="https://msp.org/jsag/about/journal/about.html" target="_blank">Journal of Software for Algebra and Geometry</a>.
         </p>
         <ul class="short-list">
             <li>Fixed the error that would appear upon loading the package.</li>
@@ -208,7 +223,7 @@
 
 
 <footer class="footer">
-    <p>&copy; Mike Cummings. Last updated: June 16, 2026.</p>
+    <p>&copy; Mike Cummings. Last updated: June 18, 2026.</p>
 </footer>
 
 </body>
