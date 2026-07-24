@@ -136,12 +136,15 @@ details:not([open]) summary::before {
 
 .seminar-table {
     table-layout: fixed;
-    width: 90%;
     border-collapse: collapse;
 }
 
+.seminar-table th:first-child {
+    width: 20%;
+}
+
 .seminar-table th:last-child {
-    width: 50%;
+    width: 60%;
 }
 
 .seminar-table th, td {
